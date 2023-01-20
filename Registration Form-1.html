@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)http://127.0.0.1:5500/HTML/HTML%20WITH%20CSS/Registration%20Form%20Assignment%203.html?Stage=+stage -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+  <link rel="stylesheet" href="./Registration Form-1_files/Registration Form.css"></head>
+  <body>
+    <div class="container">
+      <h1>Registration form</h1>
+      <form>
+        <p class="Enter">Enter Your Details below</p>
+
+        <ul>
+          <li>
+            <input type="email" value="ak3594604@gmail.com">
+          </li>
+          <li><input type="password" placeholder="Password"></li>
+        </ul>
+        <p class="type">!Type a complex password with 8-20 characters.</p>
+        <ul>
+          <li><input type="number" placeholder="+91 9708327030"></li>
+        </ul>
+        <hr>
+        <br>
+        <p class="enter">Enter Your profession</p>
+        <ul class="radio">
+          <li>
+            <input type="radio" name="Student">Student
+            <input type="radio" name="Teacher">Teacher
+            <input type="radio" name="Developer">Developer
+          </li>
+        </ul>
+        <label for="Student" class="stage">Choose the stage if you are (Student):-</label>
+        <select name="Stage" id="Stage" class="first">
+          <option value=" stage">Stage</option>
+          <option value="First stage">First Stage</option>
+          <option value="Second stage">Second Stage</option>
+          <option value="Third stage">Third Stage</option>
+        </select>
+        <hr>
+        <br>
+        <div>
+          <ul class="date">
+            <li>
+              Enter your Birth date :- <input type="date" class="birth">
+            </li>
+          </ul>
+        </div>
+        <hr>
+        <br>
+
+        <div>
+          <ul>
+            <li>
+              <input type="text" placeholder="Any Notes" class="notes">
+            </li>
+          </ul>
+        </div>
+        <hr>
+        <br>
+        <input type="submit" submit="" class="submit">
+        <input type="reset" reset="" class="reset">
+      </form>
+    </div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
